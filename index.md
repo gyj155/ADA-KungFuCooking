@@ -64,7 +64,8 @@ We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 bill
 {% include 3.3conspiracy_themes_frequency.html %}
 
 ### 4. Normalized Daily Conspiracy Video Counts
-{% include 3.4normalized_daily_conspiracy_video_counts.html %}
+<iframe src="/_includes/3.4normalized_daily_conspiracy_video_counts.html" width="100%" height="600px" frameborder="0"></iframe>
+
 
 ### 5. Cross-Correlation of Conspiracy Categories
 {% include 3.5cross_correlation_conspiracy_categories.html %}
