@@ -1,12 +1,7 @@
----
-layout: default
-title: Why Donald Trump Embraces Conspiracy Theories
-description: A Deep Dive into YouTube’s Role in Amplifying Controversy and Captivating Audiences
----
-
+	
 <p align="center">
-	<a href="https://postimg.cc/V5cJ5Q0t">
-  		<img width="600" height="350" src="https://i.postimg.cc/J7sZ6R1p/170421105103-trump-speech-thumb-3-super-tease.jpg" alt="Carbonada Image">
+	<a href="https://postimg.cc/dL9WhCRB">
+  		<img img src="https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png">
 	</a>
 </p>
 
@@ -14,7 +9,9 @@ description: A Deep Dive into YouTube’s Role in Amplifying Controversy and Cap
 
 
 
+
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
+
 
 # About YouNiverse
 YouNiverse is a comprehensive dataset covering metadata from over 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions.[Link](https://github.com/epfl-dlab/YouNiverse/tree/master)
@@ -57,17 +54,17 @@ We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 bill
 
 
 
-### 1. 阴谋论分布图
+### 1. Conspiracy Theory Distribution Map
 {% include 3.1conspiracy_theory_distribution.html %}
 
-### 2. 每月阴谋论视频数量
+### 2. Monthly Conspiracy Video Counts
 {% include 3.2monthly_conspiracy_video_counts.html %}
 
-### 3. 阴谋论主题频率
+### 3. Conspiracy Themes Frequency
 {% include 3.3conspiracy_themes_frequency.html %}
 
-### 4. 标准化每日阴谋论视频数量
+### 4. Normalized Daily Conspiracy Video Counts
 {% include 3.4normalized_daily_conspiracy_video_counts.html %}
 
-### 5. 阴谋论类别交叉关联
+### 5. Cross-Correlation of Conspiracy Categories
 {% include 3.5cross_correlation_conspiracy_categories.html %}
