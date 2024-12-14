@@ -43,15 +43,15 @@ We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 bill
 ## Proportion of conspiracy theory videos in different categories
 task1
 
-{% include plotly_pie_chart.html %}
+{% include 1.1plotly_pie_chart.html %}
 
 
 ## 2
 task2
 
-{% include plotly_view_count_comparison.html %}
-{% include ccdf_like_dislike_side_by_side.html %}
-{% include plotly_like_dislike_ratio_comparison.html %}
+{% include 2.1plotly_view_count_comparison.html %}
+{% include 2.2ccdf_like_dislike_side_by_side.html %}
+{% include 2.3plotly_like_dislike_ratio_comparison.html %}
 
 
 
