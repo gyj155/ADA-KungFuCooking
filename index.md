@@ -49,9 +49,16 @@ task1
 ## 2
 task2
 The following CCDF plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios—between videos containing conspiracy-related keywords and those without such terminology. 
+
+### 1. Comparison on the view count
 {% include 2.1plotly_view_count_comparison.html %}
+
+### 2. Comparison on the likes and dislikes count
 {% include 2.2ccdf_like_dislike_side_by_side.html %}
+
+### 3. Comparison on the like-dislike ratio
 {% include 2.3plotly_like_dislike_ratio_comparison.html %}
+
 Utilizing non-parametric hypothesis testing procedures, specifically the Mann–Whitney U test, we decisively reject the null hypothesis at a significance level of α=0.01, illustrating that videos containing conspiracy-related keywords have significantly more views, likes, dislikes and higher like-dislike ration than those without conspiracy-related keywords.
 
 
