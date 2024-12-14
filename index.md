@@ -18,12 +18,6 @@ YouNiverse is a comprehensive dataset covering metadata from over 136,000 YouTub
 
 
 
-
-
-
-
-
-
 # Framing our research
 
 
@@ -46,12 +40,24 @@ This study aims to explore the impact of the conspiracy theories proposed by Don
 
 We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions.We filtered the data to include only videos related to Donald Trump. We split the data into two parts: with and without conspiracy theory keywords.
 
-### Proportion of conspiracy theory videos in different categories
-(task1)
+## Proportion of conspiracy theory videos in different categories
+task1
+
+{% include plotly_pie_chart.html %}
+
+
+## 2
+task2
+
+{% include plotly_view_count_comparison.html %}
+{% include ccdf_like_dislike_side_by_side.html %}
+{% include plotly_like_dislike_ratio_comparison.html %}
+
+
+
 
 
 ## Tracing the Sequential Pathways of Trump-Related Conspiracy Theories on YouTube
-
 
 
 ### 1. Conspiracy Theory Distribution Map
