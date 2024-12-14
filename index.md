@@ -46,8 +46,8 @@ task1
 {% include 1.1plotly_pie_chart.html %}
 
 
-## 2
-task2
+## 2 Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
+
 The following CCDF plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios—between videos containing conspiracy-related keywords and those without such terminology. 
 
 ### 1. Comparison on the view count
