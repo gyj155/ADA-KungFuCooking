@@ -101,6 +101,23 @@ The images show cross-correlation of normalized video counts, where a negative l
 The results indicate that Trump-related conspiracy content first appears in the People & Blogs category, followed by News & Politics and Entertainment. This sequence is understandable, as People & Blogs videos generally require minimal editing or production, reflecting the public's immediate response. For example, someone might record a segment of a Trump interview on their phone and post it online instantly. News & Politics content follows closely behind, as news segments typically involve more preparation and editing, leading to a slightly delayed release. Entertainment videos are posted later as entertainment creators tend to process information from blogs or news and take additional time to consider how best to adapt the content for maximum engagement, often through added commentary or creative reinterpretation.
 
 
+## task4
+
+{% include 4.1like_ratio_boxplot_plotly.html %}
+
+We can find that for entertainment category videos, they have more tendency to have higher like-ratios.
+
+{% include 4.2engagement_rate_with_kde_final.html %}
+
+We can find that there is strong difference between conspiracy videos and non-conspiracy videos on engagement rate.
+
+
+
+
+
+
+
+
 ## task5
 
 {% include 5.1interactive_scatter_plot_views_likes.html %}
