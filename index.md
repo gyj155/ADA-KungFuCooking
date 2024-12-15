@@ -120,7 +120,8 @@ We can find that there is strong difference between conspiracy videos and non-co
 
 ## task5
 
-{% include 5.1interactive_scatter_plot_views_likes.html %}
+![](./_includes/5.1.png)
+
 
 The above figure is a log-log scatter plot of likes versus views. From the graph, we can infer that the number of likes is generally positively correlated with the number of views.
 
