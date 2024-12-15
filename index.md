@@ -137,5 +137,6 @@ Due to the high computational complexity of matching the data, we will sample th
 
 In the balanced data, the average view count for entertainment videos with conspiracy keywords is lower than the average like count for entertainment videos with conspiracy-related keywords in the title or tags.
 
-{% 5.3like_count_distribution_comparison.html %}
+{% include 5.3like_count_distribution_comparison.html %}
+
 By plotting the distribution of likes for the two groups of data, we can see that the proportion of videos with more than 2,000 likes is higher for entertainment videos with conspiracy-related keywords in the title or tags.
