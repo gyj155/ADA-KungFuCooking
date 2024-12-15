@@ -50,7 +50,7 @@ We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 bill
 
 We split the videos into two categories: videos containing conspiracy-related keywords and videos without conspiracy-related keywords.
 
-The following Complementary Cumulative Distribution Function (**CCDF**) plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios—between videos containing conspiracy-related keywords and those without such terminology. 
+The following Complementary Cumulative Distribution Function (**CCDF**) plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios, like-view-count ratio—between videos containing conspiracy-related keywords and those without such terminology. 
 To compare the statistics, we employ hypothesis testing: Null hypothesis (**H0**) assumes there’s no significant difference in the engagement metrics, while alternative hypothesis (**H1**) posits that videos containing conspiracy-related keywords have noticeably higher engagement metrics than those without.
 
 ### 1. Comparison on the view count
@@ -61,11 +61,15 @@ In this case above, **H0** is rejected at a significance level of α=0.001, show
 {% include 2.2ccdf_like_dislike_side_by_side.html %}
 In both cases above, **H0** is also rejected at a significance level of α=0.001. As a result, we can draw a conclusion that videos containing conspiracy-related keywords have significantly more likes and dislikes than those without. 
 
-### 3. Comparison on the like-dislike ratio
+### 3. Comparison on the like/dislike ratio
 {% include 2.3plotly_like_dislike_ratio_comparison.html %}
 Throught the comparison analysis, **H0** is also rejected at a significance level of α=0.001 in the like-dislike ratio case, which demonstrates that videos containing conspiracy-related keywords have significantly a higher like-dislike ratio than those without. 
 
-Conclusion: By utilizing non-parametric hypothesis testing procedures, specifically the Mann–Whitney U test, we decisively reject the null hypothesis (**H0**) at a significance level of α=0.001, illustrating that videos containing conspiracy-related keywords have significantly more views, likes, dislikes and higher like-dislike ration than those without conspiracy-related keywords.
+### 4. Comparison on the like/view-count ratio and dislike/view-count ratio
+{% include 2.4ccdf_like_dislike_side_by_sidev2.html %}
+
+
+Conclusion: By utilizing non-parametric hypothesis testing procedures, specifically the Mann–Whitney U test and Wilcoxon Rank-Sum Test, we decisively reject the null hypothesis (**H0**) at a significance level of α=0.001, illustrating that videos containing conspiracy-related keywords have significantly more views, likes, dislikes and higher like-dislike ration than those without conspiracy-related keywords.
 
 
 
