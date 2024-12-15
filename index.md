@@ -38,29 +38,34 @@ This study aims to explore the impact of the conspiracy theories proposed by Don
 
 # Initial exploration: what data do we have?
 
-We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions.We filtered the data to include only videos related to Donald Trump. We split the data into two parts: with and without conspiracy theory keywords.
+We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions. We filtered the data to include only videos related to Donald Trump. We split the data into two parts: with and without conspiracy theory keywords.
 
-## Proportion of conspiracy theory videos in different categories
-task1
+## 1 Proportion of conspiracy theory videos in different categories
+
 
 {% include 1.1plotly_pie_chart.html %}
 
 
 ## 2 Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
 
-The following CCDF plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios—between videos containing conspiracy-related keywords and those without such terminology. 
+We split the videos into two categories: videos containing conspiracy-related keywords and videos without conspiracy-related keywords.
+
+The following Complementary Cumulative Distribution Function (**CCDF**) plots illustrate the distributional discrepancies in key engagement metrics—namely view counts, like counts, dislike counts, and like–dislike ratios—between videos containing conspiracy-related keywords and those without such terminology. 
+To compare the statistics, we employ hypothesis testing: Null hypothesis (**H0**) assumes there’s no significant difference in the engagement metrics, while alternative hypothesis (**H1**) posits that videos containing conspiracy-related keywords have noticeably higher engagement metrics than those without.
 
 ### 1. Comparison on the view count
 {% include 2.1plotly_view_count_comparison.html %}
+In this case above, **H0** is rejected at a significance level of α=0.001, showing that videos containing conspiracy-related keywords have significantly more views than those without. 
 
 ### 2. Comparison on the likes and dislikes count
 {% include 2.2ccdf_like_dislike_side_by_side.html %}
+In both cases above, **H0** is also rejected at a significance level of α=0.001. As a result, we can draw a conclusion that videos containing conspiracy-related keywords have significantly more likes and dislikes than those without. 
 
 ### 3. Comparison on the like-dislike ratio
 {% include 2.3plotly_like_dislike_ratio_comparison.html %}
+Throught the comparison analysis, **H0** is also rejected at a significance level of α=0.001 in the like-dislike ratio case, which demonstrates that videos containing conspiracy-related keywords have significantly a higher like-dislike ratio than those without. 
 
-Utilizing non-parametric hypothesis testing procedures, specifically the Mann–Whitney U test, we decisively reject the null hypothesis at a significance level of α=0.01, illustrating that videos containing conspiracy-related keywords have significantly more views, likes, dislikes and higher like-dislike ration than those without conspiracy-related keywords.
-
+Conclusion: By utilizing non-parametric hypothesis testing procedures, specifically the Mann–Whitney U test, we decisively reject the null hypothesis (**H0**) at a significance level of α=0.001, illustrating that videos containing conspiracy-related keywords have significantly more views, likes, dislikes and higher like-dislike ration than those without conspiracy-related keywords.
 
 
 
