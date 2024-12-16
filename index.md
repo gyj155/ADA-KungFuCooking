@@ -113,9 +113,12 @@ While conspiracy theories often dominate political discussions on YouTube, anoth
 ### 1. Exploring engagement_rate Differences Between Entertainment and Non-Entertainment Channels
 
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
+{% raw %}
 $$
 {engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}
 $$
+{% endraw %}
+
 
 
 This metric balances the positive feedback (likes) against negative feedback (dislikes), accounting for the fact that dislikes often carry less weight than likes in reflecting audience satisfaction. By scaling the result, the engagement_rate provides a normalized measure of engagement that allows meaningful comparisons across channels.
