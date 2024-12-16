@@ -12,7 +12,9 @@ Welcome to [our project](https://github.com/epfl-ada/ada-2024-project-kungfucook
 
 
 ## Setting the Stage
-Our research dives deep into the phenomenon of conspiracy theories, with a particular focus on the narratives propagated by Donald Trump. By analyzing millions of videos, we uncover the pathways through which these theories spread and evolve. From emotional engagement to amplified reach via mainstream and alternative channels, our findings illustrate the power of YouTube in shaping political and social discourse.
+What drives Donald Trump to embrace conspiracy theories, and how does YouTube amplify their impact? This study examines the relationship between Trump’s promotion of controversial narratives and their spread on YouTube. Through the analysis of millions of videos, we reveal how these theories not only captivate audiences but also foster higher levels of engagement across both mainstream and alternative channels.
+
+Our findings shed light on YouTube’s unique role as a platform that amplifies these narratives, turning them into potent tools for emotional connection and influence. By exploring this dynamic, we aim to provide a deeper understanding of how such content shapes public discourse and audience behavior in the digital age.
 
 
 ## The Questions That Drive Us
@@ -101,16 +103,37 @@ The images show cross-correlation of normalized video counts, where a negative l
 The results indicate that Trump-related conspiracy content first appears in the People & Blogs category, followed by News & Politics and Entertainment. This sequence is understandable, as People & Blogs videos generally require minimal editing or production, reflecting the public's immediate response. For example, someone might record a segment of a Trump interview on their phone and post it online instantly. News & Politics content follows closely behind, as news segments typically involve more preparation and editing, leading to a slightly delayed release. Entertainment videos are posted later as entertainment creators tend to process information from blogs or news and take additional time to consider how best to adapt the content for maximum engagement, often through added commentary or creative reinterpretation.
 
 
-## task4
+## Transition: From Conspiracy Theories to Entertainment Channels
+
+While conspiracy theories often dominate political discussions on YouTube, another critical facet of the platform lies in its entertainment content. Entertainment channels, with their vast reach and appeal, play a unique role in shaping audience engagement. Interestingly, these channels are not immune to the spread of conspiracy narratives, often packaging them in ways that maximize viewer interaction. By examining metrics like the **engagement_rate**, we can better understand the dynamics of audience response within this distinct category.
+
+### 1. Exploring engagement_rate Differences Between Entertainment and Non-Entertainment Channels
+
+To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
+$$
+{engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}
+$$
+
+
+This metric balances the positive feedback (likes) against negative feedback (dislikes), accounting for the fact that dislikes often carry less weight than likes in reflecting audience satisfaction. By scaling the result, the engagement_rate provides a normalized measure of engagement that allows meaningful comparisons across channels.
+
+The chart below illustrates the distribution of like-ratio values for entertainment and non-entertainment channels. This visualization helps identify key differences in audience response, shedding light on how viewers perceive and interact with these two categories of content.We can find that for entertainment category videos, they have more tendency to have higher engagement_rate.
 
 {% include 4.1like_ratio_boxplot_plotly.html %}
 
-We can find that for entertainment category videos, they have more tendency to have higher like-ratios.
+### 2. Causal Analysis of Conspiracy Words on Engagement_Rate
+
+To investigate the impact of conspiracy-related content on engagement rates within a single entertainment channel, I conducted a causal analysis. Focusing on videos from the same channel helps minimize audience-related confounding factors, ensuring a more controlled comparison. To further enhance the robustness of the results, I employed a matching method based on **propensity scores**, incorporating variables such as `video_count`, `subscription`, and `duration`—factors likely to influence engagement.
+
+The results show a higher average engagement rate for videos containing conspiracy-related content (0.063972) compared to those without (0.057420). Statistical tests confirm these findings:
+
+\- **Shapiro-Wilk Test** indicates the data are not normally distributed (p-value < 0.001).
+
+\- **Mann-Whitney U Test** reveals a significant difference in engagement rates between the two groups (p-value = 0.0077).
+
+The distribution of engagement rates for conspiracy and non-conspiracy videos is visualized in the chart below, highlighting the differences between the two categories.
 
 {% include 4.2engagement_rate_with_kde_final.html %}
-
-We can find that there is strong difference between conspiracy videos and non-conspiracy videos on engagement rate.
-
 
 
 
