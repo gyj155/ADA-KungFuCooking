@@ -27,6 +27,9 @@ Our findings shed light on YouTube’s unique role as a platform that amplifies 
 
 ## 1.Proportion of conspiracy theory videos in different categories
 
+To understand the distribution of conspiracy theories across YouTube, we first analyzed the proportion of videos containing conspiracy-related terms within different content categories. This analysis reveals that while conspiracy narratives appear across a range of categories, they are particularly concentrated in the News & Politics space. Such findings underscore the close association between conspiracy content and political discourse, though other categories like Entertainment and People & Blogs also show notable presence.
+
+As shown in the figure below, these results highlight the varied but uneven spread of conspiracy theories across YouTube's content ecosystem.
 
 {% include 1.1plotly_pie_chart.html %}
 
@@ -176,3 +179,16 @@ In the balanced data, the average view count for entertainment videos with consp
 {% include 5.3like_count_distribution_comparison.html %}
 
 By plotting the distribution of likes for the two groups of data, we can see that the proportion of videos with more than 2,000 likes is higher for entertainment videos with conspiracy-related keywords in the title or tags.
+
+## Conclusion and Outlook
+In this study, we systematically analyzed the presence and impact of conspiracy-related content centered around Donald Trump on YouTube. Our work explored the proportion of videos containing Trump’s conspiracy keywords across different categories, conducted a comparative analysis of engagement metrics between videos with and without these keywords, and traced the sequential pathways through which such narratives propagate on the platform. Additionally, we investigated entertainment channels and identified intriguing trends, such as the higher average like counts for videos with Trump-related conspiracy terms in their titles or tags compared to their view counts.
+
+As Trump prepares to take office again in 2025, the use of conspiracy-related rhetoric is likely to remain a critical element of his political strategy. With his established ability to dominate online discourse, Trump may continue to utilize these keywords to expand his political influence, rally his base, and steer public narratives in his favor. Such tactics could play a significant role in shaping his administration’s communication strategy and its broader political agenda.
+
+<p align="center">
+	<a href="https://media.newyorker.com/photos/669324fd14c38da9ac7b7815/master/w_2560%2Cc_limit/Trump-shot-AP24195851874181.jpg">
+  		<img src="https://media.newyorker.com/photos/669324fd14c38da9ac7b7815/master/w_2560%2Cc_limit/Trump-shot-AP24195851874181.jpg">
+	</a>
+</p>
+
+Future research should focus on monitoring the evolving use of Trump-related conspiracy narratives, particularly their impact on political communication and public opinion. It will also be essential to explore strategies for addressing the potential risks posed by such narratives to democratic discourse while preserving the principles of free expression in the digital sphere.
