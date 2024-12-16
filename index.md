@@ -17,6 +17,12 @@ What drives Donald Trump to embrace conspiracy theories, and how does YouTube am
 Our findings shed light on YouTube’s unique role as a platform that amplifies these narratives, turning them into potent tools for emotional connection and influence. By exploring this dynamic, we aim to provide a deeper understanding of how such content shapes public discourse and audience behavior in the digital age.
 
 
+<p align="center">
+	<a href="https://img.youtube.com/vi/bVbet03pe1E/maxresdefault.jpg">
+  		<img src="https://img.youtube.com/vi/bVbet03pe1E/maxresdefault.jpg">
+	</a>
+</p>
+
 ## The Questions That Drive Us
 1. How did Trump leverage conspiracy theories to command attention on YouTube?
 2. Do videos containing conspiracy theory keywords garner higher engagement (likes, dislikes, views) compared to others?
@@ -110,6 +116,13 @@ The results indicate that Trump-related conspiracy content first appears in the 
 
 While conspiracy theories often dominate political discussions on YouTube, another critical facet of the platform lies in its entertainment content. Entertainment channels, with their vast reach and appeal, play a unique role in shaping audience engagement. Interestingly, these channels are not immune to the spread of conspiracy narratives, often packaging them in ways that maximize viewer interaction. By examining metrics like the **engagement_rate**, we can better understand the dynamics of audience response within this distinct category.
 
+<p align="center">
+	<a href="https://img.youtube.com/vi/LDwZiYAfiAo/maxresdefault.jpg">
+  		<img src="https://img.youtube.com/vi/LDwZiYAfiAo/maxresdefault.jpg">
+	</a>
+</p>
+
+
 ### 1. Exploring engagement_rate Differences Between Entertainment and Non-Entertainment Channels
 
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
@@ -143,10 +156,6 @@ The distribution of engagement rates for conspiracy and non-conspiracy videos is
 
 
 
-
-
-
-
 ## task5
 
 We plan to perform a linear regression on the like count using the remaining factors, assessing the impact of each factor on the like count based on their weights.
@@ -158,7 +167,7 @@ We can see that after normalization, the positive impact of views on the like co
 Furthermore, we will explore the interaction between the factors of whether a video is categorized as entertainment and whether it contains conspiracy theory keywords in the title or tags.  We will introduce the interaction term of the two factors to perform linear regression.
 
 {% include 5.1.1ols_regression_results_interaction_plotly.html %}
-
+# todo
 Surprisingly, the coefficient of the interaction term between the two is actually negative. This means that, all else being equal, if a video is an entertainment video with conspiracy-related keywords in its title or tags, it tends to have fewer likes than entertainment videos without conspiracy keywords or non-entertainment videos with conspiracy keywords. However, the p-value of the interaction term is greater than 0.05, so this effect may not be significant.
 
 
@@ -183,15 +192,19 @@ In the balanced data, the average view count for entertainment videos with consp
 
 By plotting the distribution of likes for the two groups of data, we can see that the proportion of videos with more than 2,000 likes is higher for entertainment videos with conspiracy-related keywords in the title or tags.
 
-## Conclusion and Outlook
-In this study, we systematically analyzed the presence and impact of conspiracy-related content centered around Donald Trump on YouTube. Our work explored the proportion of videos containing Trump’s conspiracy keywords across different categories, conducted a comparative analysis of engagement metrics between videos with and without these keywords, and traced the sequential pathways through which such narratives propagate on the platform. Additionally, we investigated entertainment channels and identified intriguing trends, such as the higher average like counts for videos with Trump-related conspiracy terms in their titles or tags compared to their view counts.
-
-As Trump prepares to take office again in 2025, the use of conspiracy-related rhetoric is likely to remain a critical element of his political strategy. With his established ability to dominate online discourse, Trump may continue to utilize these keywords to expand his political influence, rally his base, and steer public narratives in his favor. Such tactics could play a significant role in shaping his administration’s communication strategy and its broader political agenda.
-
 <p align="center">
 	<a href="https://media.newyorker.com/photos/669324fd14c38da9ac7b7815/master/w_2560%2Cc_limit/Trump-shot-AP24195851874181.jpg">
   		<img src="https://media.newyorker.com/photos/669324fd14c38da9ac7b7815/master/w_2560%2Cc_limit/Trump-shot-AP24195851874181.jpg">
 	</a>
 </p>
+
+## Conclusion and Outlook
+
+
+In this study, we systematically analyzed the presence and impact of conspiracy-related content centered around Donald Trump on YouTube. Our work explored the proportion of videos containing Trump’s conspiracy keywords across different categories, conducted a comparative analysis of engagement metrics between videos with and without these keywords, and traced the sequential pathways through which such narratives propagate on the platform. Additionally, we investigated entertainment channels and identified intriguing trends, such as the higher average like counts for videos with Trump-related conspiracy terms in their titles or tags compared to their view counts.
+
+As Trump prepares to take office again in 2025, the use of conspiracy-related rhetoric is likely to remain a critical element of his political strategy. With his established ability to dominate online discourse, Trump may continue to utilize these keywords to expand his political influence, rally his base, and steer public narratives in his favor. Such tactics could play a significant role in shaping his administration’s communication strategy and its broader political agenda.
+
+
 
 Future research should focus on monitoring the evolving use of Trump-related conspiracy narratives, particularly their impact on political communication and public opinion. It will also be essential to explore strategies for addressing the potential risks posed by such narratives to democratic discourse while preserving the principles of free expression in the digital sphere.
