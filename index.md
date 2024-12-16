@@ -49,9 +49,13 @@ In both cases above, **H0** is also rejected at a significance level of α=0.01.
 Throught the comparison analysis, **H0** is also rejected at a significance level of α=0.01 in the like-dislike ratio case, which demonstrates that videos containing conspiracy-related keywords have significantly a higher like-dislike ratio than those without. 
 
 ### 4. Comparison on the like/view-count ratio and dislike/view-count ratio
-![](./_includes/2.4like_view_ratio_comparison.png)
+
+{% include 2.0.0_ccdf_like_view_ratio_comparison.html %}
+
 Throught the comparison analysis, **H0** is rejected at a significance level of α=0.01 in the like-dislike ratio case, which demonstrates that people prefer to give more likes to videos containing conspiracy-related keywords than those without.
-![](./_includes/2.4dislike_view_ratio_comparison.png)
+
+{% include 2.0.1ccdf_dislike_view_ratio_comparison.html %}
+
 In this case above, **H0** is rejected at a significance level of α=0.01, demonstrating that people prefer to give less dislikes to videos containing conspiracy-related keywords than those without.
 
 
