@@ -6,47 +6,30 @@
 </p>
 
 
+# A Dynamic Exploration of YouTube and Its Hidden Influences
+
+Welcome to [our project](https://github.com/epfl-ada/ada-2024-project-kungfucooking), where data meets discovery. With metadata from over 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, the [YouNiverse](https://github.com/epfl-dlab/YouNiverse/tree/master) dataset, opens a window into the intricate dynamics of YouTube—a platform that shapes public discourse, amplifies voices, and sometimes, distorts realities. At the heart of our journey lies a pressing question: How do conspiracy theories thrive in this vast digital ecosystem?
 
 
+## Setting the Stage
+Our research dives deep into the phenomenon of conspiracy theories, with a particular focus on the narratives propagated by Donald Trump. By analyzing millions of videos, we uncover the pathways through which these theories spread and evolve. From emotional engagement to amplified reach via mainstream and alternative channels, our findings illustrate the power of YouTube in shaping political and social discourse.
 
 
-<!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
+## The Questions That Drive Us
+1. How did Trump leverage conspiracy theories to command attention on YouTube?
+2. Do videos containing conspiracy theory keywords garner higher engagement (likes, dislikes, views) compared to others?
+3. Are entertainment-focused Trump-related videos driving more views, and how do subscription patterns shift before and after their release?
+4. How do conspiracy-related keywords in titles or tags, combined with entertainment categorization, influence a video's engagement metrics?
 
+### Key Findings: The Hidden Patterns of Influence and Engagement
 
-# About YouNiverse
-YouNiverse is a comprehensive dataset covering metadata from over 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions.[Link](https://github.com/epfl-dlab/YouNiverse/tree/master)
-
-
-
-# Framing our research
-
-
-This study aims to explore the impact of the conspiracy theories proposed by Donald Trump on YouTube. Analyzing millions of videos, we reveal that conspiracy content drives higher engagement and trace how these narratives spread, often amplified by both mainstream and alternative channels. Our findings highlight how conspiracy theories become powerful tools for emotional engagement, illustrating YouTube’s role in amplifying political influence.
-
-
-
-
-
-# What are we looking for? Research question
-
-
-1. How did Trump use conspiracy theories to gain attention on YouTube? What is the trajectory of the dissemination of conspiracy theory-related content?
-2. Do videos containing conspiracy theory content attract greater attention (e.g., likes, dislikes, views) compared to videos without conspiracy theory keywords?
-3. Is there the trend of channels creating Trump-related videos with an entertainment focus generates higher view counts? And what are the subscription differences before and after a video publishing?
-4. How do the presence of conspiracy theory keywords in the title or tags and whether the video belongs to the entertainment category interactively influence the number of likes a video receives?
-
-
-# Initial exploration: what data do we have?
-
-We have a dataset of 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, offering valuable insights into platform dynamics, content trends, and user interactions. We filtered the data to include only videos related to Donald Trump. We split the data into two parts: with and without conspiracy theory keywords.
-
-## 1 Proportion of conspiracy theory videos in different categories
+## 1.Proportion of conspiracy theory videos in different categories
 
 
 {% include 1.1plotly_pie_chart.html %}
 
 
-## 2 Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
+## 2.Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
 
 We split the videos into two categories: videos containing conspiracy-related keywords and videos without conspiracy-related keywords.
 
@@ -96,7 +79,7 @@ A time-series analysis of these videos revealed two primary peaks in content vol
 
 From September to December 2019, mentions of the *Biden Family Scandal* surged in conspiracy content, driven by Trump’s focus on alleged Biden corruption amid the impeachment inquiry. Trump emphasized Hunter Biden’s Ukraine dealings to cast doubt on his political opponent and counter the impeachment narrative, fueling widespread conspiracy theories across media platforms.
 
-From September to December 2018, "Deep State" and "QAnon" mentions spiked as Trump frequently referenced these conspiracies during the midterm election campaign. By highlighting the "Deep State," he sought to energize his base and frame opposition as part of a hidden government conspiracy, driving public interest and a surge of related content online.
+From September to December 2018, *Deep State* and *QAnon* mentions spiked as Trump frequently referenced these conspiracies during the midterm election campaign. By highlighting the "Deep State", he sought to energize his base and frame opposition as part of a hidden government conspiracy, driving public interest and a surge of related content online.
 
 ### 4. Normalized Daily Conspiracy Video Counts
 {% include 3.4.1normalized_daily_conspiracy_video_counts_Sep_Dec_2018.html %}
@@ -133,7 +116,7 @@ We can find that there is strong difference between conspiracy videos and non-co
 
 ## task5
 
-![](./_includes/5.1.png)
+![](/assets/images/5.1.png)
 
 
 The above figure is a log-log scatter plot of likes versus views. From the graph, we can infer that the number of likes is generally positively correlated with the number of views.
