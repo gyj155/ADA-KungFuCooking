@@ -143,11 +143,6 @@ The distribution of engagement rates for conspiracy and non-conspiracy videos is
 
 ## task5
 
-![](/assets/images/5.1.png)
-
-
-The above figure is a log-log scatter plot of likes versus views. From the graph, we can infer that the number of likes is generally positively correlated with the number of views.
-
 We plan to perform a linear regression on the like count using the remaining factors, assessing the impact of each factor on the like count based on their weights.
 
 {% include 5.2.1ols_regression_results_plotly.html %}
