@@ -126,11 +126,9 @@ While conspiracy theories often dominate political discussions on YouTube, anoth
 ### 1. Exploring engagement_rate Differences Between Entertainment and Non-Entertainment Channels
 
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
-{% raw %}
-$$
-{engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}
-$$
-{% endraw %}
+
+${engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}$
+
 
 
 
@@ -155,42 +153,45 @@ The distribution of engagement rates for conspiracy and non-conspiracy videos is
 {% include 4.2engagement_rate_with_kde_final.html %}
 
 
-
 ## Exploring the Intersection of Conspiracy Theories and Entertainment Content
+
+### Analyzing the Importance of each factor by Comparing the Coefficients in Linear Regression
 
 We plan to perform a linear regression on the like count using the remaining factors, assessing the impact of each factor on the like count based on their weights.
 
-{% include 5.2.1ols_regression_results_plotly.html %}
+![OLS Regression Results](assets/images/5.2.1.png)
 
-We can see that after normalization, the positive impact of views on the like count is the largest. At the same time, whether the video is categorized as entertainment and whether it contains conspiracy theory keywords in the title or tags also have a significant positive impact on the like count. It can be seen from the p-value that the influence of these factors is significant.
 
-Furthermore, we will explore the interaction between the factors of whether a video is categorized as entertainment and whether it contains conspiracy theory keywords in the title or tags.  We will introduce the interaction term of the two factors to perform linear regression.
+We can see that **after data normalization**, the positive impact of views on the like count is the largest. At the same time, whether the video is categorized as entertainment and whether it contains conspiracy theory keywords in the title or tags also have a significant positive impact on the like count. It can be seen from the p-value that the influence of these factors is significant.
+
+Furthermore, we will explore the interaction between the factors of whether a video is categorized as entertainment ('entertainment' = 1) and whether it contains conspiracy theory keywords in the title or tags ('conspiracy' = 1).  We will introduce the interaction term of the two factors to perform linear regression.
 
 {% include 5.1.1ols_regression_results_interaction_plotly.html %}
 
-Surprisingly, the coefficient of the interaction term between the two is actually negative. This means that, all else being equal, if a video is an entertainment video with conspiracy-related keywords in its title or tags, it tends to have fewer likes than entertainment videos without conspiracy keywords or non-entertainment videos with conspiracy keywords. However, the p-value of the interaction term is greater than 0.05, so this effect may not be significant.
+**Surprisingly, the coefficient of the interaction term between the two is actually negative.** This means that, all else being equal, if a video with 'entertainment' = 1 and 'conspiracy' = 1 tends to have fewer likes than videos with 'entertainment' = 1 but 'conspiracy' = 0 or videos with 'conspiracy' = 1 but 'entertainment' = 0. However, the p-value of the interaction term is greater than 0.05, so this effect *may not be significant*.
 
 
-{% include 5.2interaction_effect_entertainment_conspiracy_plotly.html %}
+![OLS Regression Results](assets/images/5.1.1.png)
 
-In the figure, we can see that the average number of likes for entertainment videos with conspiracy-related keywords in the title or tags is lower than that of entertainment videos without conspiracy keywords, as well as lower than that of non-entertainment videos with conspiracy keywords.
+ In the figure, we can see that the average number of likes for videos with 'entertainment' = 1 and 'conspiracy' = 1 is lower than that of videos with 'entertainment' = 1 but 'conspiracy' = 0, as well as slightly lower than that of videos with 'conspiracy' = 1 but 'entertainment' = 0.
 
-However, this analysis is very naive because entertainment videos without conspiracy keywords may have a much larger sample size than those with conspiracy-related keywords, and the view count for videos without conspiracy keywords may be higher than that for videos with conspiracy-related keywords, leading to this phenomenon. Therefore, we hope to balance the data to verify whether the number of likes for entertainment videos without conspiracy keywords is significantly greater than that for entertainment videos with conspiracy-related keywords in the title or tags.
+ However, this analysis is very naive because entertainment videos without conspiracy keywords may have a much larger sample size than those with conspiracy-related keywords, and the view count for videos without conspiracy keywords may be higher than that for videos with conspiracy-related keywords, leading to this phenomenon. Therefore, we hope to **balance the data** to verify whether the number of likes for entertainment videos without conspiracy keywords is significantly greater than that for entertainment videos with conspiracy-related keywords.
 
 
-We can see that the average view count for entertainment videos without conspiracy keywords is nearly five times that of entertainment videos with conspiracy-related keywords in the title or tags. This may be due to the presence of more extreme values in the sample of entertainment videos without conspiracy keywords.
-
-First, we calculate the propensity score to balance the data.
+### 2. Using Logistic Regression to Balance the Data
+First, we calculate the propensity score to balance the data by **Logistic Regression**.
 
 {% include 5.2.2logistic_regression_results_plotly.html %}
 
-Due to the high computational complexity of matching the data, we will sample the data first.
+However, due to the high computational complexity of matching the data, we will sample the data before matching the instances.
 
-In the balanced data, the average view count for entertainment videos with conspiracy keywords is lower than the average like count for entertainment videos with conspiracy-related keywords in the title or tags.
+In the balanced data, the average like count for entertainment videos with conspiracy keywords is lower than the average like count for entertainment videos with conspiracy-related keywords.
 
 {% include 5.3like_count_distribution_comparison.html %}
 
-By plotting the distribution of likes for the two groups of data, we can see that the proportion of videos with more than 2,000 likes is higher for entertainment videos with conspiracy-related keywords in the title or tags.
+By plotting the distribution of likes for the two groups of data, we can see that the proportion of videos with more than 2,000 likes is higher for entertainment videos with conspiracy-related keywords (the treated group).
+
+Mann-Whitney U Test reveals that the median of the treated group is actually significantly larger than the control group (p-value = 2.09e-10).
 
 <p align="center">
 	<a href="https://media.newyorker.com/photos/669324fd14c38da9ac7b7815/master/w_2560%2Cc_limit/Trump-shot-AP24195851874181.jpg">
