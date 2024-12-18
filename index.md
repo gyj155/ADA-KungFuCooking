@@ -31,7 +31,7 @@ Our findings shed light on YouTube’s unique role as a platform that amplifies 
 
 ### Key Findings: The Hidden Patterns of Influence and Engagement
 
-## 1.Proportion of conspiracy theory videos in different categories
+## Proportion of conspiracy theory videos in different categories
 
 To understand the distribution of conspiracy theories across YouTube, we first analyzed the proportion of videos containing conspiracy-related terms within different content categories. This analysis reveals that while conspiracy narratives appear across a range of categories, they are particularly concentrated in the News & Politics space. Such findings underscore the close association between conspiracy content and political discourse, though other categories like Entertainment and People & Blogs also show notable presence.
 
@@ -40,7 +40,7 @@ As shown in the figure below, these results highlight the varied but uneven spre
 {% include 1.1plotly_pie_chart.html %}
 
 
-## 2.Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
+## Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
 
 We split the videos into two categories: videos containing conspiracy-related keywords and videos without conspiracy-related keywords.
 
@@ -156,7 +156,7 @@ The distribution of engagement rates for conspiracy and non-conspiracy videos is
 
 
 
-## task5
+## Exploring the Intersection of Conspiracy Theories and Entertainment Content
 
 We plan to perform a linear regression on the like count using the remaining factors, assessing the impact of each factor on the like count based on their weights.
 
@@ -167,7 +167,7 @@ We can see that after normalization, the positive impact of views on the like co
 Furthermore, we will explore the interaction between the factors of whether a video is categorized as entertainment and whether it contains conspiracy theory keywords in the title or tags.  We will introduce the interaction term of the two factors to perform linear regression.
 
 {% include 5.1.1ols_regression_results_interaction_plotly.html %}
-# todo
+
 Surprisingly, the coefficient of the interaction term between the two is actually negative. This means that, all else being equal, if a video is an entertainment video with conspiracy-related keywords in its title or tags, it tends to have fewer likes than entertainment videos without conspiracy keywords or non-entertainment videos with conspiracy keywords. However, the p-value of the interaction term is greater than 0.05, so this effect may not be significant.
 
 
