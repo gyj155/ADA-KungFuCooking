@@ -127,7 +127,9 @@ While conspiracy theories often dominate political discussions on YouTube, anoth
 
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
 
-${engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}$
+&#36;{engagement\_rate} = &#92;frac&#123;&#123;like&#125;&#125; - (&#123;dislike&#125; &#92;times 0.5)&#125;&#123;view\_count&#125;
+
+
 
 
 
