@@ -7,9 +7,9 @@ Explore the project here: [ADA-KungFuCooking](https://gyj155.github.io/ADA-KungF
 
 ## 📖 About
 
-Why Donald Trump embraces conspiracy theories?
+# Why Donald Trump embraces conspiracy theories?
 
-A Deep Dive into YouTube’s Role in Amplifying Controversy and Captivating Audiences
+# A Deep Dive into YouTube’s Role in Amplifying Controversy and Captivating Audiences
 
 ## 🚀 Features
 - Proportion of conspiracy theory videos in different categories
