@@ -7,16 +7,20 @@ Explore the project here: [ADA-KungFuCooking](https://gyj155.github.io/ADA-KungF
 
 ## 📖 About
 
+Why Donald Trump embraces conspiracy theories?
 
+A Deep Dive into YouTube’s Role in Amplifying Controversy and Captivating Audiences
 
 ## 🚀 Features
--
--
--
+- Proportion of conspiracy theory videos in different categories
+- Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
+- Tracing the Sequential Pathways of Trump-Related Conspiracy Theories on YouTube
+- Transition: From Conspiracy Theories to Entertainment Channels
+- Exploring the Intersection of Conspiracy Theories and Entertainment Content
 
 ## 📂 Repository Structure
 ```
-├── index.html          # Main webpage
+├── index.md          # Main webpage
 ├── styles/             # CSS stylesheets
 ├── scripts/            # JavaScript files
 ├── assets/             # Images and other static resources
