@@ -29,8 +29,6 @@ Our findings shed light on YouTube’s unique role as a platform that amplifies 
 3. Are entertainment-focused Trump-related videos driving more views, and how do subscription patterns shift before and after their release?
 4. How do conspiracy-related keywords in titles or tags, combined with entertainment categorization, influence a video's engagement metrics?
 
-### Key Findings: The Hidden Patterns of Influence and Engagement
-
 ## Proportion of conspiracy theory videos in different categories
 
 To understand the distribution of conspiracy theories across YouTube, we first analyzed the proportion of videos containing conspiracy-related terms within different content categories. This analysis reveals that while conspiracy narratives appear across a range of categories, they are particularly concentrated in the News & Politics space. Such findings underscore the close association between conspiracy content and political discourse, though other categories like Entertainment and People & Blogs also show notable presence.
@@ -128,9 +126,7 @@ While conspiracy theories often dominate political discussions on YouTube, anoth
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
 
 
-![formula](assets/images/formula.png)
-
-
+![formula](assets/images/CodeCogsEqn.png)
 
 
 
