@@ -127,10 +127,8 @@ While conspiracy theories often dominate political discussions on YouTube, anoth
 
 To analyze audience engagement across different types of content, we calculated the **engagement_rate** using the formula:
 
-{% raw %}
-${engagement\_rate} = \frac{{like} - ({dislike} \times 0.5)}{view\_count}$
-{% endraw %}
 
+![formula](assets/images/formula.png)
 
 
 
@@ -170,7 +168,6 @@ We can see that **after data normalization**, the positive impact of views on th
 
 Furthermore, we will explore the interaction between the factors of whether a video is categorized as entertainment ('entertainment' = 1) and whether it contains conspiracy theory keywords in the title or tags ('conspiracy' = 1).  We will introduce the interaction term of the two factors to perform linear regression.
 
-{% include 5.1.1ols_regression_results_interaction_plotly.html %}
 
 **Surprisingly, the coefficient of the interaction term between the two is actually negative.** This means that, all else being equal, if a video with 'entertainment' = 1 and 'conspiracy' = 1 tends to have fewer likes than videos with 'entertainment' = 1 but 'conspiracy' = 0 or videos with 'conspiracy' = 1 but 'entertainment' = 0. However, the p-value of the interaction term is greater than 0.05, so this effect *may not be significant*.
 
