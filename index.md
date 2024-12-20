@@ -196,13 +196,23 @@ Mann-Whitney U Test reveals that the median of the treated group is actually sig
 	</a>
 </p>
 
-## Conclusion and Outlook
 
 
-In this study, we systematically analyzed the presence and impact of conspiracy-related content centered around Donald Trump on YouTube. Our work explored the proportion of videos containing Trump’s conspiracy keywords across different categories, conducted a comparative analysis of engagement metrics between videos with and without these keywords, and traced the sequential pathways through which such narratives propagate on the platform. Additionally, we investigated entertainment channels and identified intriguing trends, such as the higher average like counts for videos with Trump-related conspiracy terms in their titles or tags compared to their view counts.
+## Conclusion and Future Directions
 
-As Trump prepares to take office again in 2025, the use of conspiracy-related rhetoric is likely to remain a critical element of his political strategy. With his established ability to dominate online discourse, Trump may continue to utilize these keywords to expand his political influence, rally his base, and steer public narratives in his favor. Such tactics could play a significant role in shaping his administration’s communication strategy and its broader political agenda.
+This study systematically analyzes the influence and dynamics of Trump-related conspiracy content on YouTube. Our findings highlight key insights:
 
+1. **Content Distribution**: Conspiracy-related videos are predominantly concentrated in the News & Politics category, but also notably present in Entertainment and People & Blogs.
+   
+2. **Engagement Metrics**: Videos containing conspiracy keywords outperform others in terms of views, likes, and engagement rates, emphasizing the powerful draw of such narratives.
 
+3. **Content Pathways**: Trump-related conspiracy content propagates sequentially, often originating in People & Blogs before spreading to News & Politics and Entertainment categories.
 
-Future research should focus on monitoring the evolving use of Trump-related conspiracy narratives, particularly their impact on political communication and public opinion. It will also be essential to explore strategies for addressing the potential risks posed by such narratives to democratic discourse while preserving the principles of free expression in the digital sphere.
+4. **Entertainment's Role**: Entertainment videos featuring conspiracy content show higher engagement rates, but their interplay reveals nuanced trends requiring further investigation.
+
+As Trump will return to the presidency in 2025, monitoring the evolution of these narratives and their impact on public discourse will be crucial. Future research should explore:
+- The role of algorithmic amplification in the spread of conspiracy content.
+- Strategies to balance free expression with the mitigation of misinformation risks.
+- The broader societal implications of political narratives embedded within entertainment media.
+
+By delving deeper into these dynamics, we unlock the tools to confront the intricate challenges of preserving democratic ideals in the face of a rapidly evolving digital landscape. The stakes are high: our ability to distinguish truth from manipulation and foster meaningful dialogue will define the integrity of public discourse and the resilience of democracy in the digital age.
