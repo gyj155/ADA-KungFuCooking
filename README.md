@@ -1,55 +1,22 @@
-# ADA-KungFuCooking
+# Ada-Project: Why Donald Trump Embraces Conspiracy Theories
+## A Deep Dive into YouTube's Role in Amplifying Controversy and Captivating Audiences
+### Website link: https://gyj155.github.io/ADA-KungFuCooking/
+### Description
+Welcome to our project, where data meets discovery. With metadata from over 136,000 YouTube channels, 72.9 million videos, and 8.6 billion comments, the YouNiverse dataset, opens a window into the intricate dynamics of YouTube—a platform that shapes public discourse, amplifies voices, and sometimes, distorts realities. At the heart of our journey lies a pressing question: How do conspiracy theories thrive in this vast digital ecosystem?
 
-Welcome to the **ADA-KungFuCooking** project! This repository hosts the source code and resources for the Kung Fu Cooking website.
+### Group Name: 
+kungfucooking
+### Group members: 
+Yejie Guo, Tianshuo Zhang, Yifan Wang, Yixiang Chen, Yuheng He.
+### Group contributions:
 
-## 🌐 Website
-Explore the project here: [ADA-KungFuCooking](https://gyj155.github.io/ADA-KungFuCooking/)
+Firstly, we thank to Yejie for his work in raw data preprocessing.
 
-## 📖 About
+For the web design and data story, Yejie, Tianshuo, Yifan and Yixiang share the equal contribution.
 
-### Why Donald Trump embraces conspiracy theories?
-
-**A Deep Dive into YouTube’s Role in Amplifying Controversy and Captivating Audiences**
-
-## 🚀 Features
-- Proportion of conspiracy theory videos in different categories
-- Comparative Analysis of Videos Containing Conspiracy Terms vs. Non-Conspiracy Content
-- Tracing the Sequential Pathways of Trump-Related Conspiracy Theories on YouTube
-- Transition: From Conspiracy Theories to Entertainment Channels
-- Exploring the Intersection of Conspiracy Theories and Entertainment Content
-
-## 📂 Repository Structure
-```
-├── index.md          # Main webpage
-├── styles/             # CSS stylesheets
-├── scripts/            # JavaScript files
-├── assets/             # Images and other static resources
-└── README.md           # Project documentation
-```
-
-## 🛠️ Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/gyj155/ADA-KungFuCooking.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd ADA-KungFuCooking
-   ```
-3. Open `index.html` in your web browser to view the website locally.
-
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-We welcome contributions! To get started:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request with your changes.
-
-## 📧 Contact
-For questions or feedback, feel free to open an issue or contact us at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Thank you for visiting **ADA-KungFuCooking**! 🍳🥋
+In terms of the data exploration and analysis, we present five parts in our website. Everyone in our group is responsible for one part.
+- Yuheng: Draw a pie chart showing the proportion of different types of conspiracy terms(part 1).
+- Yifan: Comparative analysis of videos containing conspiracy-related terms versus non-conspiracy content(part2).
+- Yejie: Tracing the sequential pathways of Trump-related conspiracy theories on YouTube(part3).
+- Tianshuo: Exploring the transition from conspiracy theories to entertainment channels(part4).
+- Yixiang: Investigating the intersectional effects of conspiracy terms and entertainment channels(part5).
