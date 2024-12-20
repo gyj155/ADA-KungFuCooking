@@ -170,15 +170,15 @@ Furthermore, we will explore the interaction between the factors of whether a vi
 
 ![OLS Regression Results](assets/images/5.1.1.png)
 
- In the figure, we can see that the average number of likes for videos with 'entertainment' = 1 and 'conspiracy' = 1 is lower than that of videos with 'entertainment' = 1 but 'conspiracy' = 0, as well as slightly lower than that of videos with 'conspiracy' = 1 but 'entertainment' = 0.
+In the figure, we can see that the average number of likes for videos with 'entertainment' = 1 and 'conspiracy' = 1 is lower than that of videos with 'entertainment' = 1 but 'conspiracy' = 0, as well as slightly lower than that of videos with 'conspiracy' = 1 but 'entertainment' = 0.
 
- However, this analysis is very naive because entertainment videos without conspiracy keywords may have a much larger sample size than those with conspiracy-related keywords, and the view count for videos without conspiracy keywords may be higher than that for videos with conspiracy-related keywords, leading to this phenomenon. Therefore, we hope to **balance the data** to verify whether the number of likes for entertainment videos without conspiracy keywords is significantly greater than that for entertainment videos with conspiracy-related keywords.
+However, this analysis is very naive because entertainment videos without conspiracy keywords may have a much larger sample size than those with conspiracy-related keywords, and the view count for videos without conspiracy keywords may be higher than that for videos with conspiracy-related keywords, leading to this phenomenon. Therefore, we hope to **balance the data** to verify whether the number of likes for entertainment videos without conspiracy keywords is significantly greater than that for entertainment videos with conspiracy-related keywords.
 
 
 ### 2. Using Logistic Regression to Balance the Data
 First, we calculate the propensity score to balance the data by **Logistic Regression**.
 
-{% include 5.2.2logistic_regression_results_plotly.html %}
+![OLS Regression Results](assets/images/5.2.2.png)
 
 However, due to the high computational complexity of matching the data, we will sample the data before matching the instances.
 
